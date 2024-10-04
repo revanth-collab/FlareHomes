@@ -1,0 +1,52 @@
+.main-heading {
+    text-align: center;
+}
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.error-message {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 30px;
+}
+.library {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 10px;
+}
+.library-list {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.unlist {
+    list-style-type: circle;
+}
+
+.library-title {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 20px;
+    color:#000000;
+}
+.title {
+    font-family: "Roboto";
+    font-weight: bold;
+}
+.book-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
