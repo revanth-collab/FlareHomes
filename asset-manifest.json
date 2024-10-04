@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/FlareHomes.git/static/css/main.3175b729.css",
+    "main.js": "/FlareHomes.git/static/js/main.e210eeda.js",
+    "static/js/453.94e6580f.chunk.js": "/FlareHomes.git/static/js/453.94e6580f.chunk.js",
+    "index.html": "/FlareHomes.git/index.html",
+    "main.3175b729.css.map": "/FlareHomes.git/static/css/main.3175b729.css.map",
+    "main.e210eeda.js.map": "/FlareHomes.git/static/js/main.e210eeda.js.map",
+    "453.94e6580f.chunk.js.map": "/FlareHomes.git/static/js/453.94e6580f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3175b729.css",
+    "static/js/main.e210eeda.js"
+  ]
+}
