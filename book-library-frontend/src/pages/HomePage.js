@@ -3,6 +3,8 @@ import { fetchBooks } from '../services/bookService';
 import BookList from '../components/BookList';
 import SearchBar from '../components/SearchBar';
 
+import "./pages.css"
+
 const HomePage = () => {
   const [books, setBooks] = useState([]);
   const [filteredBooks, setFilteredBooks] = useState([]);
@@ -28,8 +30,8 @@ const HomePage = () => {
   };
 
   return (
-    <div>
-      <h1>Book Library</h1>
+    <div >
+      <h1 className='main-heading'>Book Library</h1>
       <SearchBar onSearch={handleSearch} />
       <BookList books={filteredBooks} />
     </div>
@@ -37,3 +39,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
