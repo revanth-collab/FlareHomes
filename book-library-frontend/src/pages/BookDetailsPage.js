@@ -1,8 +1,11 @@
 // src/pages/BookDetailsPage.js
 import React, { useEffect, useState, useContext } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams,Link } from 'react-router-dom';
 import { fetchBooks } from '../services/bookService';
 import { LibraryContext } from '../context/LibraryContext';
+
+
+import "./pages.css"
 
 const BookDetailsPage = () => {
   const { id } = useParams();
@@ -31,16 +34,20 @@ const BookDetailsPage = () => {
   if (!book) return <div>Loading...</div>;
 
   return (
-    <div>
-      <h1>{book.title}</h1>
-      <p><strong>Author:</strong> {book.author}</p>
-      <p><strong>Genre:</strong> {book.genre}</p>
-      <p><strong>Rating:</strong> {book.rating}</p>
-      <p><strong>Description:</strong> {book.description}</p>
-      <p><strong>Publication Year:</strong> {book.publication_year}</p>
-      <button onClick={handleAddToLibrary}>Add to My Library</button>
+    <div className='book-details'>
+      <div>
+        <h1>{book.title}</h1>
+        <p><strong>Author:</strong> {book.author}</p>
+        <p><strong>Genre:</strong> {book.genre}</p>
+        <p><strong>Rating:</strong> {book.rating}</p>
+        <p><strong>Description:</strong> {book.description}</p>
+        <p><strong>Publication Year:</strong> {book.publication_year}</p>
+        <button onClick={handleAddToLibrary} className='button'>Add to My Library</button>
+      </div>
+      <Link to={`/`}><button className='button'>Back</button></Link>
     </div>
   );
 };
 
 export default BookDetailsPage;
+
