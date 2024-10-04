@@ -1,6 +1,8 @@
 import React from 'react';
 import BookCard from './BookCard';
 
+import "./books.css"
+
 const BookList = ({ books }) => {
   return (
     <div className="book-list">
@@ -12,3 +14,4 @@ const BookList = ({ books }) => {
 };
 
 export default BookList;
+
